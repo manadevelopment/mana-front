@@ -5,6 +5,8 @@ import Image from "next/image";
 // * components
 import NavItem from "./NavItem";
 import DropDown from "./DropDown";
+import ContainedBtn from "../../buttons/ContainedBtn";
+import TextBtn from "../../buttons/TextBtn";
 
 // * assets
 import logo from "../../../assets/images/logo.webp";
@@ -128,6 +130,11 @@ const Header = () => {
             </li>
           ))}
         </ul>
+        {/* Buttons */}
+        <div css={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <TextBtn path={"/"}>ورود</TextBtn>
+          <ContainedBtn path={"/"}>عضویت</ContainedBtn>
+        </div>
       </nav>
     </header>
   );
