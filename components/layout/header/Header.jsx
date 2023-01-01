@@ -128,9 +128,6 @@ const Header = () => {
           ))}
         </ul>
         {/* Buttons */}
-        <div css={{}}>
-          
-        </div>
       </nav>
     </header>
   );
