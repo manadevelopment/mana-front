@@ -4,6 +4,7 @@ import Image from "next/image";
 
 // * components
 import NavItem from "./NavItem";
+import DropDown from "./DropDown";
 
 // * assets
 import logo from "../../../assets/images/logo.webp";
@@ -13,7 +14,6 @@ const menu = [
   {
     title: "خانه",
     path: "/",
-    subMenu: undefined,
   },
   {
     title: "خدمات",
@@ -44,22 +44,18 @@ const menu = [
   {
     title: "دوره‌ها",
     path: "/",
-    subMenu: undefined,
   },
   {
     title: "نمونه‌کارها",
     path: "/",
-    subMenu: undefined,
   },
   {
     title: "دریافت سفارش",
     path: "/",
-    subMenu: undefined,
   },
   {
     title: "مقالات",
     path: "/",
-    subMenu: undefined,
   },
   {
     title: "سایر",
@@ -119,15 +115,19 @@ const Header = () => {
           }}
         >
           {menu.map((item) => (
-            <NavItem
+            <li
               key={item.title}
-              title={item.title}
-              path={item.path}
-              subMenu={item.subMenu}
-            />
+              css={{ paddingBlock: "0.5rem", position: "relative" }}
+            >
+              <NavItem
+                title={item.title}
+                path={item.path}
+                subMenu={item.subMenu ? true : false}
+              />
+              {item.subMenu && <DropDown items={item.subMenu} />}
+            </li>
           ))}
         </ul>
-        {/* Buttons */}
       </nav>
     </header>
   );

@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import Link from "next/link";
+import NavItem from "./NavItem";
 
 const DropDown = ({ items }) => {
   return (
@@ -13,40 +13,31 @@ const DropDown = ({ items }) => {
         boxShadow: "0px 2px 4px 0px #21212140",
         overflow: "hidden",
         maxHeight: 0,
-        transition: "max-height 0.3s",
+        opacity: 0,
+        transition: "max-height 0.3s,opacity 0.3s",
 
-        "a:hover &": {
+        "li:hover > &": {
           maxHeight: "25rem",
+          opacity: 1,
         },
       }}
     >
-      <div
+      <ul
         css={{
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
           padding: "1rem",
+          listStyle: "none",
+          margin: 0,
         }}
       >
         {items.map((item) => (
-          <Link
-            key={item.title}
-            href={item.path}
-            css={(theme) => ({
-              color: theme.colors.mainGray,
-              fontSize: "1.4rem",
-              fontWeight: "bold",
-              transition: "color 0.25s",
-              whiteSpace: "nowrap",
-              ":hover": {
-                color: theme.colors.mainBlue,
-              },
-            })}
-          >
-            {item.title}
-          </Link>
+          <li key={item.title}>
+            <NavItem title={item.title} path={item.path} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
