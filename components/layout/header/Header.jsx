@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -84,8 +85,26 @@ const menu = [
 ];
 
 const Header = () => {
+  const [scrollTop, setScrollTop] = useState(0);
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", (event) => {
+      setScrollTop(window.scrollY);
+    });
+  }
   return (
-    <header css={{ display: "flex", justifyContent: "center" }}>
+    <header
+      css={{
+        display: "flex",
+        justifyContent: "center",
+        position: "sticky",
+        top: 0,
+        boxShadow: scrollTop ? " 0px 2px 4px 0px #21212140" : "none",
+        backgroundColor: scrollTop ? "white" : "transparent",
+        transition: "box-shadow 0.25s,background-color 0.25s",
+      }}
+    >
+      {console.log(scrollTop)}
       <nav
         css={(theme) => ({
           alignItems: "center",
