@@ -24,6 +24,7 @@ const Header = () => {
             src={logo}
             placeholder="blur"
             css={{ width: "100%", height: "auto" }}
+            alt="Mana's Logo"
           />
         </Link>
         <ul
