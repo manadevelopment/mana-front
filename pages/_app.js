@@ -25,6 +25,7 @@ const theme = {
   width: "82%",
   maxWidth: "140rem",
   mobileWidth: "95%",
+  borderRadius: "1rem",
 };
 
 export default function App({ Component, pageProps }) {
