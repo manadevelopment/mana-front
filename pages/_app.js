@@ -1,6 +1,8 @@
 import { ApolloProvider } from "@apollo/client";
 import client from "../apollo-client";
 import { ThemeProvider } from "@emotion/react";
+import store from "../services/states/store";
+import { Provider } from "react-redux";
 
 // * css
 import "normalize.css";
@@ -32,9 +34,11 @@ export default function App({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
-        <MainLayout>
-          <Component {...pageProps} />
-        </MainLayout>
+        <Provider store={store}>
+          <MainLayout>
+            <Component {...pageProps} />
+          </MainLayout>
+        </Provider>
       </ThemeProvider>
     </ApolloProvider>
   );
