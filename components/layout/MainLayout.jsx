@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setIsMobile } from "../../services/states/mobileSlice";
 
 // * components
@@ -8,6 +8,7 @@ import Header from "./header/Header";
 import Footer from "./footer/Footer";
 
 const MainLayout = ({ children }) => {
+  const mobile = useSelector((state) => state.isMobile.value);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -15,11 +16,13 @@ const MainLayout = ({ children }) => {
   }, []);
 
   return (
-    <>
-      <Header />
-      {children}
-      <Footer />
-    </>
+    mobile !== undefined && (
+      <>
+        <Header />
+        {children}
+        <Footer />
+      </>
+    )
   );
 };
 

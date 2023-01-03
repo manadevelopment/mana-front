@@ -7,7 +7,6 @@ const TextBtn = ({ children, path }) => {
       href={path || "#"}
       css={(theme) => ({
         color: theme.colors.mainGreen,
-        fontSize: "1.4rem",
       })}
     >
       {children}

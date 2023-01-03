@@ -10,7 +10,6 @@ const ContainedBtn = ({ children, path, padding }) => {
         padding: padding || "0.5rem 1rem",
         borderRadius: theme.borderRadius,
         color: "white",
-        fontSize: "1.4rem",
       })}
     >
       {children}
