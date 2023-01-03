@@ -10,6 +10,10 @@ const ContainedBtn = ({ children, path, padding }) => {
         padding: padding || "0.5rem 1rem",
         borderRadius: theme.borderRadius,
         color: "white",
+        display: "inline-flex",
+        "@media (max-width:768px)": {
+          padding: "1rem 2rem",
+        },
       })}
     >
       {children}
