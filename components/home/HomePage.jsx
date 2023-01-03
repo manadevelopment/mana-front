@@ -1,13 +1,14 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
 
 // * components
 import HeroHome from "./HeroHome";
+import AboutHome from "./AboutHome";
 
 const HomePage = () => {
   return (
     <>
       <HeroHome />
+      <AboutHome />
     </>
   );
 };

@@ -26,7 +26,7 @@ const theme = {
   },
   width: "82%",
   maxWidth: "140rem",
-  mobileWidth: "95%",
+  mobileWidth: "90%",
   borderRadius: "1rem",
 };
 

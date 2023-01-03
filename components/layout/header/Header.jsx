@@ -107,7 +107,8 @@ const Header = () => {
         top: 0,
         boxShadow: scrollTop ? !isOpen && "0px 1px 8px 0px #2121211F" : "none",
         backgroundColor: scrollTop ? "white" : isOpen ? "white" : "transparent",
-        transition: "box-shadow 0.25s,background-color 0.25s",
+        transition: "box-shadow 0.2s,background-color 0.2s",
+        zIndex: 100,
       }}
     >
       <nav
