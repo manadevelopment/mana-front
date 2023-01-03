@@ -101,6 +101,7 @@ const HeroHome = () => {
           placeholder="blur"
           css={{ width: "100%", height: "auto" }}
           alt="مردی در حال فکر کردن"
+          priority
         />
       </div>
     </div>
