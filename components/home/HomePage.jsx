@@ -4,6 +4,7 @@
 import HeroHome from "./HeroHome";
 import AboutHome from "./AboutHome";
 import ServiceHome from "./ServiceHome";
+import PortfolioHome from "./PortfolioHome";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HeroHome />
       <AboutHome />
       <ServiceHome />
+      <PortfolioHome />
     </>
   );
 };

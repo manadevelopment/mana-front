@@ -13,7 +13,7 @@ const ServiceHome = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        padding: "1rem",
+        padding: "2.5rem 1rem",
         gap: "1rem",
         alignItems: "center",
         background: `url(${bg.src})`,
