@@ -36,6 +36,7 @@ const PortfolioHome = () => {
           position: "absolute",
           bottom: "100%",
         }}
+        alt="مانا"
       />
       <h2
         css={{
@@ -92,6 +93,7 @@ const PortfolioHome = () => {
           position: "absolute",
           bottom: "0",
         }}
+        alt="مانا"
       />
     </div>
   );

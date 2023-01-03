@@ -10,7 +10,6 @@ import bg from "../../assets/images/hero-bg-wave.svg";
 import arrow from "../../assets/images/hero-arrow.svg";
 
 const HeroHome = () => {
-  console.log(bg);
   return (
     <div
       css={{
@@ -75,6 +74,7 @@ const HeroHome = () => {
           <ContainedBtn padding={"1rem 4rem"}>مشاوره رایگان</ContainedBtn>
           <Image
             src={arrow}
+            alt="مانا"
             css={{
               position: "absolute",
               width: "13rem",
