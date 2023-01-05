@@ -75,7 +75,7 @@ const MobileMenu = ({ isOpen, menu }) => {
       >
         <a href="#" css={{ display: "flex" }}>
           <svg
-            css={{ width: "2.4rem", aspectRatio: 1 }}
+            css={{ width: "2.4rem", aspectRatio: "1" }}
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const MobileMenu = ({ isOpen, menu }) => {
         </a>
         <a href="#" css={{ display: "flex" }}>
           <svg
-            css={{ width: "2.4rem", aspectRatio: 1 }}
+            css={{ width: "2.4rem", aspectRatio: "1" }}
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

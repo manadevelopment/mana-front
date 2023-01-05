@@ -25,7 +25,6 @@ const PortfolioHome = () => {
         backgroundSize: "cover",
         position: "relative",
         marginTop: "18rem",
-        minHeight: "50rem",
       }}
     >
       <Image

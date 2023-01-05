@@ -5,6 +5,7 @@ import HeroHome from "./HeroHome";
 import AboutHome from "./AboutHome";
 import ServiceHome from "./ServiceHome";
 import PortfolioHome from "./PortfolioHome";
+import TestimonialHome from "./TestimonialHome";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <AboutHome />
       <ServiceHome />
       <PortfolioHome />
+      <TestimonialHome />
     </>
   );
 };
