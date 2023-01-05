@@ -14,6 +14,7 @@ const PortfolioCard = ({ image, path, title }) => {
           borderRadius: "5rem",
           height: "auto",
         }}
+        placeholder="blur"
       />
       <Link
         href={path}
