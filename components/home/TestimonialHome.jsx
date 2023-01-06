@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 // * components
 import TestimonialCard from "../cards/TestimonialCard";
@@ -101,7 +101,12 @@ const TestimonialHome = () => {
             nextEl: ".testimonial-slider-next",
             prevEl: ".testimonial-slider-prev",
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
           css={(theme) => ({
             padding: "1rem",
             width: "50%",

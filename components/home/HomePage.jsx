@@ -6,6 +6,7 @@ import AboutHome from "./AboutHome";
 import ServiceHome from "./ServiceHome";
 import PortfolioHome from "./PortfolioHome";
 import TestimonialHome from "./TestimonialHome";
+import ContactHome from "./ContactHome";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <ServiceHome />
       <PortfolioHome />
       <TestimonialHome />
+      <ContactHome />
     </>
   );
 };
