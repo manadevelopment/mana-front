@@ -25,7 +25,7 @@ const TestimonialHome = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        padding: "3rem 1rem 10rem",
+        padding: "5rem 1rem 10rem",
         gap: "1rem",
         alignItems: "center",
         background: `url(${bg.src})`,
@@ -54,6 +54,7 @@ const TestimonialHome = () => {
           margin: 0,
           fontWeight: 700,
           textAlign: "center",
+          marginInline: "5%",
         }}
       >
         نظرات برخی از مشتری‌های مانا افزار را در مورد خدمات این شرکت برای رونق
@@ -78,6 +79,7 @@ const TestimonialHome = () => {
             padding: "0.5rem",
             borderRadius: "50%",
             cursor: "pointer",
+            justifyContent: "center",
             "& > svg": {
               fill: "white",
             },
@@ -167,6 +169,7 @@ const TestimonialHome = () => {
             padding: "0.5rem",
             borderRadius: "50%",
             cursor: "pointer",
+            justifyContent: "center",
             "& > svg": {
               fill: "white",
             },
