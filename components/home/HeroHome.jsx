@@ -91,6 +91,7 @@ const HeroHome = () => {
       </div>
       <div
         css={{
+          width: "58rem",
           "@media (max-width:768px)": {
             width: "100%",
           },
