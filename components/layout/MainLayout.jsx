@@ -13,7 +13,7 @@ const MainLayout = ({ children }) => {
 
   useEffect(() => {
     dispatch(setIsMobile(window.innerWidth <= 768 ? true : false));
-  }, []);
+  }, [dispatch]);
 
   return (
     mobile !== undefined && (

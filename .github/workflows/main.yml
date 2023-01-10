@@ -36,4 +36,5 @@ jobs:
             echo "start Deploying"
             cd mana/mana-front
             npm run build
+            cd .next
             ls
