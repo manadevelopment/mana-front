@@ -35,4 +35,5 @@ jobs:
           script: |
             echo "start Deploying"
             cd mana/mana-front
-            npm -v
+            npm run build
+            ls
