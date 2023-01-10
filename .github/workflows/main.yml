@@ -21,3 +21,14 @@ jobs:
           npm run lint
         env:
           CI: true
+  deploy:
+    name: Deoply On Host
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: whoami
