@@ -36,6 +36,7 @@ jobs:
             echo "start Deploying"
             cd mana/mana-front
             git pull
+            npm install
             npm run build
             cd .next
             ls
