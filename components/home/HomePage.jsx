@@ -17,7 +17,7 @@ const HomePage = () => {
       <AboutHome />
       <ServiceHome />
       <PortfolioHome />
-      {/* <FormHome /> */}
+      <FormHome />
       <TestimonialHome />
       <BlogHome />
       <ContactHome />

@@ -1,11 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import Link from "next/link";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 import DropDown from "./DropDown";
 
 const NavItem = ({ title, path, subMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const mobile = useSelector((state) => state.isMobile.value);
   return (
     <>
       <Link
@@ -38,7 +40,9 @@ const NavItem = ({ title, path, subMenu }) => {
               width: "1rem",
               fill: theme.colors.mainGray,
               transition: "all 0.25s",
-              rotate: isOpen ? "180deg" : "90deg",
+              ...(mobile && {
+                rotate: isOpen ? "180deg" : "90deg",
+              }),
               "@media (min-width:769px)": {
                 "li:hover &": { fill: theme.colors.mainBlue, rotate: "180deg" },
               },

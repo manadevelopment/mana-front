@@ -16,23 +16,23 @@ body {
 }
 
 /* width */
-::-webkit-scrollbar {
-  width: 0.8rem;
+body::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #118ab2;
   border-radius: 1rem;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: #0c5b75;
 }
 

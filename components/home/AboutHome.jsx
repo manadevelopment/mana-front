@@ -7,7 +7,7 @@ const AboutHome = () => {
     <div
       css={(theme) => ({
         backgroundColor: theme.colors.darkerBg,
-        padding: "2rem",
+        paddingBlock: "2rem",
         display: "flex",
         flexDirection: "column",
         position: "relative",

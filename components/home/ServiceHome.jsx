@@ -13,7 +13,7 @@ const ServiceHome = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        padding: "2.5rem 1rem",
+        paddingBlock: "2.5rem",
         gap: "1rem",
         alignItems: "center",
         background: `url(${bg.src})`,
@@ -50,10 +50,10 @@ const ServiceHome = () => {
           maxWidth: theme.maxWidth,
           display: "grid",
           gridTemplateColumns: "repeat(4,1fr)",
-          gap: "5rem 2rem",
+          gap: "6rem 2rem",
+          marginTop: "5rem",
           "@media (max-width:768px)": {
-            marginTop: "4rem",
-            width: "95%",
+            width: theme.mobileWidth,
             gridTemplateColumns: "repeat(1,1fr)",
           },
         })}

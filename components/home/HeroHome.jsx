@@ -35,7 +35,7 @@ const HeroHome = () => {
       <div css={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
         <h2
           css={(theme) => ({
-            fontWeight: 900,
+            fontWeight: 950,
             margin: 0,
             fontSize: "4rem",
             textAlign: "center",

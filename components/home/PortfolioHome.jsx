@@ -16,7 +16,7 @@ const PortfolioHome = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        padding: "1rem 1rem 7.5rem",
+        paddingBlock: "1rem 7.5rem",
         gap: "2rem",
         alignItems: "center",
         background: `url(${bg.src})`,
@@ -25,6 +25,10 @@ const PortfolioHome = () => {
         backgroundSize: "cover",
         position: "relative",
         marginTop: "18rem",
+        "@media (max-width:768px)": {
+          marginTop: "4rem",
+          paddingBlock: "6rem",
+        },
       }}
     >
       <Image
@@ -39,7 +43,7 @@ const PortfolioHome = () => {
       />
       <h2
         css={{
-          margin: 0,
+          margin: "0 5%",
           fontSize: "3.2rem",
           color: "white",
           textAlign: "center",
@@ -49,7 +53,7 @@ const PortfolioHome = () => {
       </h2>
       <p
         css={{
-          margin: 0,
+          margin: "0 5%",
           color: "white",
           textAlign: "center",
         }}
