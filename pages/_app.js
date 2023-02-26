@@ -3,7 +3,7 @@ import client from "../apollo-client";
 import { ThemeProvider } from "@emotion/react";
 import store from "../services/states/store";
 import { Provider } from "react-redux";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 // * css
 import "normalize.css";
